@@ -1,0 +1,191 @@
+@import "./colors.scss";
+
+.home {
+	font-weight: 500;
+	padding: 20px;
+	user-select: none;
+}
+
+.desktop {
+	height: 100vh;
+	width: 100vw;
+	background-color: $main-color;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+
+	.circles {
+		span {
+			width: 20px;
+			height: 20px;
+			border: 5px solid $white;
+			background: $main-color;
+			position: absolute;
+			border-radius: 50%;
+			z-index: 2;
+
+			&.tl {
+				top: -18.5px;
+				left: -18.5px;
+			}
+			&.tr {
+				top: -18.5px;
+				right: -18.5px;
+			}
+			&.bl {
+				bottom: -18.5px;
+				left: -18.5px;
+			}
+			&.br {
+				bottom: -18.5px;
+				right: -18.5px;
+			}
+			&.lmt {
+				top: calc(35% - 18.5px);
+				left: -18.5px;
+			}
+			&.lmb {
+				bottom: calc(35% - 18.5px);
+				left: -18.5px;
+			}
+		}
+	}
+
+	.blanks {
+		span {
+			position: absolute;
+		}
+		.switch {
+			background: $main-color;
+			width: 40px;
+			height: 30%;
+			top: 35%;
+			left: -20px;
+			z-index: 1;
+			cursor: pointer;
+		}
+		.battery {
+			background: $main-color;
+			width: 15px;
+			right: -7.5px;
+			top: 46%;
+			height: 5%;
+		}
+		.bulb {
+			left: 45%;
+			top: calc(100% - 2.5px);
+			background: $main-color;
+			width: 10%;
+			height: 25px;
+		}
+	}
+
+	.things {
+		.label {
+			font-size: 2.8em;
+			font-weight: 700;
+			color: $white;
+			position: absolute;
+			top: 50%;
+			transform: rotate(-90deg) translateY(-220%) translateX(20%);
+			cursor: pointer;
+		}
+
+		.switch {
+			background: $white;
+			width: 10px;
+			height: 30%;
+			position: absolute;
+			top: 35%;
+			left: -9px;
+			z-index: 1;
+			transform-origin: bottom center;
+			transform: rotate(30deg);
+			transition: 0.5s $easer;
+			cursor: pointer;
+
+			&.clicked {
+				transform: rotate(0deg);
+			}
+		}
+
+		.battery {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: row;
+			div {
+				position: absolute;
+				background: $white;
+				height: 8px;
+				top: 50%;
+				position: absolute;
+
+				&.top {
+					top: 45%;
+					right: -62.5px;
+					width: 120px;
+				}
+				&.bottom {
+					bottom: 45%;
+					right: -92.5px;
+					width: 180px;
+				}
+			}
+		}
+	}
+
+	.text {
+		color: $white;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		top: 45%;
+		transform: translateY(-50%);
+
+		.one {
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 6.5em;
+		}
+		.two {
+			text-transform: uppercase;
+			font-weight: 500;
+			font-size: 4.5em;
+		}
+		.text-line {
+			margin: 25px 0px;
+			width: 200px;
+			height: 5px;
+			background-color: $white;
+		}
+		.motto {
+			font-weight: 100;
+			font-size: 3em;
+			.dot {
+				margin-left: -5px;
+				font-size: 2.1em;
+				line-height: 10px;
+			}
+		}
+	}
+
+	.circuit {
+		width: 75vw;
+		height: 75vh;
+		border: 8px solid $white;
+		position: fixed;
+		top: 12.5vh;
+		left: 12.5vw;
+	}
+
+	.bulb {
+		width: 8%;
+		position: absolute;
+		top: 95%;
+		left: 46%;
+		transform: translateY(-50%);
+	}
+}

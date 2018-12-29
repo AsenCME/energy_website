@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1455" height="793" viewBox="0 0 1455 793">
+  <g id="Complete_Curcuit" data-name="Complete Curcuit" transform="translate(-270 -167)">
+    <g id="Curcuit" transform="translate(300 188)" fill="none">
+      <path d="M0,0H1320V744H0Z" stroke="none"/>
+      <path d="M 0 0 L 0 744 L 1320 744 L 1320 0 L 0 0 M -10 -10 L 0 -10 L 1320 -10 L 1330 -10 L 1330 0 L 1330 744 L 1330 754 L 1320 754 L 0 754 L -10 754 L -10 744 L -10 0 L -10 -10 Z" stroke="none" fill="#fff"/>
+    </g>
+    <rect id="Blank_Space_Bottom" data-name="Blank Space Bottom" width="128" height="48" transform="translate(896 912)" fill="#7e2222"/>
+    <rect id="Blank_Space_Side" data-name="Blank Space Side" width="50" height="180" transform="translate(270 450)" fill="#7e2222"/>
+    <rect id="Blank_Space_Top" data-name="Blank Space Top" width="30" height="36" transform="translate(1610 560)" fill="#7e2222"/>
+    <rect id="Switch" width="10" height="150" transform="translate(367.17 489.548) rotate(30)" fill="#fff"/>
+    <g id="Battery" transform="translate(1442 1535) rotate(-90)">
+      <rect id="Battery_Pole" data-name="Battery Pole" width="10" height="100" transform="translate(975 133)" fill="#fff"/>
+      <rect id="Battery_Pole-2" data-name="Battery Pole" width="10" height="200" transform="translate(930 83)" fill="#fff"/>
+    </g>
+    <g id="Circles" transform="translate(0 20)">
+      <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(280 148)" fill="#7e2222" stroke="#fff" stroke-width="5">
+        <circle cx="15" cy="15" r="15" stroke="none"/>
+        <circle cx="15" cy="15" r="12.5" fill="none"/>
+      </g>
+      <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(280 902)" fill="#7e2222" stroke="#fff" stroke-width="5">
+        <circle cx="15" cy="15" r="15" stroke="none"/>
+        <circle cx="15" cy="15" r="12.5" fill="none"/>
+      </g>
+      <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(1610 901)" fill="#7e2222" stroke="#fff" stroke-width="5">
+        <circle cx="15" cy="15" r="15" stroke="none"/>
+        <circle cx="15" cy="15" r="12.5" fill="none"/>
+      </g>
+      <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(1610 147)" fill="#7e2222" stroke="#fff" stroke-width="5">
+        <circle cx="15" cy="15" r="15" stroke="none"/>
+        <circle cx="15" cy="15" r="12.5" fill="none"/>
+      </g>
+      <g id="Ellipse_9" data-name="Ellipse 9" transform="translate(280 592)" fill="#7e2222" stroke="#fff" stroke-width="5">
+        <circle cx="15" cy="15" r="15" stroke="none"/>
+        <circle cx="15" cy="15" r="12.5" fill="none"/>
+      </g>
+      <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(280 412)" fill="#7e2222" stroke="#fff" stroke-width="5">
+        <circle cx="15" cy="15" r="15" stroke="none"/>
+        <circle cx="15" cy="15" r="12.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
