@@ -1,0 +1,152 @@
+@import "./main.scss";
+
+.layout {
+	width: 100vw;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+
+	display: flex;
+	flex-direction: row;
+}
+
+header {
+	position: fixed;
+	margin-top: 8vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	z-index: 1;
+
+	.home-btn {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		background: $main-color;
+		margin-left: 3vw;
+		padding: 0px 20px;
+		cursor: pointer;
+
+		.bulb {
+			width: 3vh;
+			margin-right: 10px;
+		}
+		.label {
+			font-weight: 600;
+			font-size: 1.5em;
+			color: $white;
+		}
+	}
+	.line {
+		width: 100%;
+		height: 2px;
+		background: $white;
+	}
+}
+
+.sidenav {
+	position: relative;
+	padding-top: 20vh;
+	padding-bottom: 10vh;
+	padding-left: 3vw;
+	padding-right: 6vw;
+	max-width: 500px;
+	background: $main-color;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+
+	.title-wrapper {
+		.title {
+			font-size: 3em;
+			font-weight: 700;
+			color: $white;
+		}
+		.line {
+			margin-top: 10px;
+			width: calc(100% + 4vw);
+			height: 5px;
+			background: $white;
+			border-top-right-radius: 20px;
+			border-bottom-right-radius: 20px;
+			margin-left: -3vw;
+		}
+	}
+
+	.nav {
+		display: inline-flex;
+		flex-direction: column;
+		position: absolute;
+		bottom: 10vh;
+		right: -4vw;
+
+		.link {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			position: relative;
+			margin: 15px 0px;
+			padding: 5px 0px;
+
+			cursor: pointer;
+
+			&:first-of-type {
+				margin-top: 0px;
+			}
+			&:last-of-type {
+				margin-bottom: 0px;
+			}
+
+			&.selected {
+				.name {
+					margin-right: -5px;
+					font-weight: 700;
+				}
+				.inner-line {
+					width: 5vw;
+				}
+			}
+
+			.name {
+				color: $white;
+				font-weight: 400;
+				margin-right: 10px;
+				font-size: 1.3em;
+				transition: 0.2s $easer;
+			}
+			.inner-line {
+				height: 3px;
+				width: 6vw;
+				background: $white;
+				transition: 0.2s $easer;
+				margin-bottom: -3px;
+			}
+			.outer-line {
+				height: 3px;
+				width: 4vw;
+				background: $main-color;
+				margin-bottom: -3px;
+			}
+		}
+	}
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	padding: 0px 20vw;
+	z-index: 2;
+}
+@media screen and (max-width: 1500px) {
+	main {
+		padding: 0px 15vw;
+	}
+}
+@media screen and (max-width: 1200px) {
+	main {
+		padding: 0px 12vw;
+	}
+}

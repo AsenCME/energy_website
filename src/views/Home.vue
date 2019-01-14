@@ -2,7 +2,37 @@
   <div class="home">
 
     <!-- Mobile Version -->
-    <div v-if="isMobile()">nigga we mobile</div>
+    <div
+      v-if="isMobile()"
+      class="mobile"
+    >
+      <div class="text">
+        <div class="one">Енерджи</div>
+        <div class="two">Про-Консулт</div>
+        <div class="text-line"></div>
+        <div class="motto">Винаги може повече</div>
+      </div>
+
+      <div
+        class="start-btn"
+        @click="click()"
+      >
+        <img
+          src="./../assets/button.svg"
+          alt=""
+          class="circuit"
+        >
+
+        <img
+          src="./../assets/bulb.svg"
+          alt=""
+          class="bulb"
+        >
+
+        <span class="label">НАЧАЛО</span>
+      </div>
+
+    </div>
 
     <!-- Desktop & Tablet Version -->
     <div
@@ -42,7 +72,7 @@
           <div
             class="label"
             @click="click"
-          >BEGIN</div>
+          >НАЧАЛО</div>
           <span
             class="switch"
             @click="click"
@@ -71,17 +101,23 @@
   </div>
 </template>
 
+<style lang="sass" scoped>
+@import "@/styles/home.scss"
+</style>
+
+
 <script>
-import "@/styles/home.scss";
 export default {
   name: "home",
   methods: {
     click() {
-      // go to hub
-      document.querySelector(".things .switch").classList.add("clicked");
-      console.log("clickity click");
+      if (!this.isMobile())
+        document.querySelector(".things .switch").classList.add("clicked");
+      console.log("clickity click time to go");
+      setTimeout(() => {
+        this.$router.push("hub");
+      }, 600);
     }
   }
 };
 </script>
-

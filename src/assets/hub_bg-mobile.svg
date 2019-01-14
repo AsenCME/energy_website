@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="667" viewBox="0 0 375 667">
+  <defs>
+    <clipPath id="clip-Hub">
+      <rect width="375" height="667"/>
+    </clipPath>
+  </defs>
+  <g id="Hub" clip-path="url(#clip-Hub)">
+    <rect width="375" height="667" fill="#7e2222"/>
+    <path id="bg_line" data-name="bg line" d="M445-2410s63.847,610.61,374.627,667.115c1.865.339-33.336,0-33.336,0H445.323l-.323-642.6Z" transform="translate(-445 2410)" fill="#722"/>
+  </g>
+</svg>

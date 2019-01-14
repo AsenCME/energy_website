@@ -1,4 +1,4 @@
-@import "./colors.scss";
+@import "./main.scss";
 
 .home {
 	font-weight: 500;
@@ -66,8 +66,8 @@
 		}
 		.battery {
 			background: $main-color;
-			width: 15px;
-			right: -7.5px;
+			width: 50px;
+			right: -25px;
 			top: 46%;
 			height: 5%;
 		}
@@ -82,12 +82,12 @@
 
 	.things {
 		.label {
-			font-size: 2.8em;
+			font-size: 2.5em;
 			font-weight: 700;
 			color: $white;
 			position: absolute;
 			top: 50%;
-			transform: rotate(-90deg) translateY(-220%) translateX(20%);
+			transform: rotate(-90deg) translateY(-300%) translateX(15%);
 			cursor: pointer;
 		}
 
@@ -187,5 +187,118 @@
 		top: 95%;
 		left: 46%;
 		transform: translateY(-50%);
+	}
+}
+
+.mobile {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: $main-color;
+	color: $white;
+
+	.text {
+		color: $white;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		top: 25%;
+		transform: translateY(-50%);
+
+		.one {
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 1.75em;
+		}
+		.two {
+			text-transform: uppercase;
+			font-weight: 500;
+			font-size: 1.2em;
+		}
+		.text-line {
+			margin: 10px 0px;
+			width: 150px;
+			height: 3px;
+			background-color: $white;
+		}
+		.motto {
+			font-weight: 100;
+			font-size: 0.9em;
+		}
+	}
+
+	.start-btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		bottom: 7.5%;
+		width: 75%;
+		left: 12.5%;
+
+		.circuit {
+			width: 100%;
+		}
+		.bulb {
+			position: absolute;
+			margin-top: 5%;
+			width: 30%;
+		}
+		.label {
+			position: absolute;
+			bottom: 0px;
+			transform: translateY(25%);
+			font-size: 1em;
+			font-weight: 700;
+			padding: 5px 10px;
+			background: $main-color;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.desktop {
+		.text {
+			.one {
+				font-size: 5em !important;
+			}
+			.two {
+				font-size: 3.5em !important;
+			}
+			.motto {
+				font-size: 2.5em !important;
+			}
+		}
+
+		.things {
+			.label {
+				font-size: 2em !important;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1500px) {
+	.desktop {
+		.text {
+			.one {
+				font-size: 5.5em !important;
+			}
+			.two {
+				font-size: 4em !important;
+			}
+			.motto {
+				font-size: 3em !important;
+			}
+		}
+
+		.things {
+			.label {
+				font-size: 2.25em !important;
+			}
+		}
 	}
 }

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="271" viewBox="0 0 256 271">
+  <g id="Button" transform="translate(-60 -340)">
+    <rect id="outline" width="235" height="235" stroke-width="5" fill="#7e2222" stroke="#fff" transform="translate(70 365)"/>
+    <g id="Battery" transform="translate(-7 -14)">
+      <rect id="Rectangle_45" data-name="Rectangle 45" width="5" height="35" transform="translate(185 361)" fill="#fff"/>
+      <rect id="Rectangle_46" data-name="Rectangle 46" width="5" height="50" transform="translate(200 354)" fill="#fff"/>
+      <rect id="Rectangle_47" data-name="Rectangle 47" width="10" height="7" transform="translate(190 375)" fill="#7e2222"/>
+    </g>
+    <g id="Circles">
+      <g id="Ellipse_38" data-name="Ellipse 38" transform="translate(60 355)" fill="#7e2222" stroke="#fff" stroke-width="5">
+        <circle cx="10.5" cy="10.5" r="10.5" stroke="none"/>
+        <circle cx="10.5" cy="10.5" r="8" fill="none"/>
+      </g>
+      <g id="Ellipse_39" data-name="Ellipse 39" transform="translate(295 355)" fill="#7e2222" stroke="#fff" stroke-width="5">
+        <circle cx="10.5" cy="10.5" r="10.5" stroke="none"/>
+        <circle cx="10.5" cy="10.5" r="8" fill="none"/>
+      </g>
+      <g id="Ellipse_40" data-name="Ellipse 40" transform="translate(295 590)" fill="#7e2222" stroke="#fff" stroke-width="5">
+        <circle cx="10.5" cy="10.5" r="10.5" stroke="none"/>
+        <circle cx="10.5" cy="10.5" r="8" fill="none"/>
+      </g>
+      <g id="Ellipse_41" data-name="Ellipse 41" transform="translate(60 590)" fill="#7e2222" stroke="#fff" stroke-width="5">
+        <circle cx="10.5" cy="10.5" r="10.5" stroke="none"/>
+        <circle cx="10.5" cy="10.5" r="8" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

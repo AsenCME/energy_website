@@ -1,0 +1,17 @@
+$main-color: #7e2222;
+$comp-color: #772222;
+$white: #ffffff;
+
+$easer: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+::-webkit-scrollbar {
+	display: none !important;
+}
+
+.shadow {
+	box-shadow: 0px 10px 30px -15px rgba(#000, 0.75);
+	transition: 0.3s $easer;
+	&:hover {
+		box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.75);
+	}
+}

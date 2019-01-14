@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="none slice">
+  <defs>
+    <clipPath id="clip-Hub">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Hub" clip-path="url(#clip-Hub)">
+    <rect width="1920" height="1080" fill="#7e2222"/>
+    <path id="BG_Line" data-name="BG Line" d="M18453.412-69.19c706.119-177.335-534.635,1419.29,2341.924,1021.7,40.271-5.566-291.09,261.487-291.09,261.487v83.571H18362.027V-69.19S18399.83-62.841,18453.412-69.19Z" transform="translate(-18409 -165)" fill="#722"/>
+  </g>
+</svg>
