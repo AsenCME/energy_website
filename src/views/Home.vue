@@ -49,6 +49,7 @@
 
       <div class="circuit">
 
+        <!-- Circles as contact points -->
         <div class="circles">
           <span class="tl"></span>
           <span class="tr"></span>
@@ -58,42 +59,46 @@
           <span class="lmb"></span>
         </div>
 
-        <div class="blanks">
-          <span
-            class="switch"
-            @click="click"
-          ></span>
-          <span class="lamp"></span>
-          <span class="battery"></span>
-          <span class="bulb"></span>
+        <!-- Start Button -->
+        <div
+          class="start-button"
+          @click="click"
+        >
+          <span>КЪМ САЙТА</span>
+          <div class="point top-left"></div>
+          <div class="point top-right"></div>
+          <div class="point bottom-left"></div>
+          <div class="point bottom-right"></div>
         </div>
 
-        <div class="things">
+        <!-- Circuit style switch -->
+        <span
+          class="switch-wrapper"
+          @click="click"
+        >
           <div
-            class="label"
-            @click="click"
-          >НАЧАЛО</div>
-          <span
             class="switch"
             @click="click"
-          ></span>
-          <span class="battery">
-            <div class="top"></div>
-            <div class="bottom"></div>
-          </span>
+          ></div>
+        </span>
+
+        <!-- Battery -->
+        <span class="battery">
+          <div class="top"></div>
+          <div class="blank-space"></div>
+          <div class="bottom"></div>
+        </span>
+
+        <!-- Bulb -->
+        <div class="bulb-wrapper">
+          <div class="bulb-blank"></div>
+          <div class="bulb-blank other"></div>
+          <img
+            src="./../assets/bulb.svg"
+            alt=""
+            class="bulb"
+          />
         </div>
-
-        <!-- <img
-          class="circuit-img"
-          src="./../assets/circuit.svg"
-          alt=""
-        /> -->
-
-        <img
-          src="./../assets/bulb.svg"
-          alt=""
-          class="bulb"
-        />
 
       </div>
     </div>
@@ -112,7 +117,9 @@ export default {
   methods: {
     click() {
       if (!this.isMobile())
-        document.querySelector(".things .switch").classList.add("clicked");
+        document
+          .querySelector(".switch-wrapper .switch")
+          .classList.add("clicked");
       console.log("clickity click time to go");
       setTimeout(() => {
         this.$router.push("hub");

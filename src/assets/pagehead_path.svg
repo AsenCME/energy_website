@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="393.17" height="58.513" viewBox="0 0 393.17 58.513">
+  <defs>
+    <filter id="Path_40" x="0" y="0" width="393.17" height="58.513" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_40)">
+    <path id="Path_40-2" data-name="Path 40" d="M889.5-2122.891l375.17-40.513H889.5Z" transform="translate(-880.5 2167.4)" fill="#7e2222"/>
+  </g>
+</svg>

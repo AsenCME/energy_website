@@ -5,7 +5,7 @@
     <header>
       <div
         class="home-btn"
-        @click="home()"
+        @click="hub()"
       >
         <img
           src="./../assets/bulb.svg"
@@ -39,6 +39,11 @@
         </div>
       </div>
 
+      <img
+        src="./../assets/page_sidebg.svg"
+        class="bg-path"
+      >
+
     </div>
 
     <!-- Main Content -->
@@ -54,8 +59,8 @@ export default {
   props: ["title", "links"],
   name: "page-layout",
   methods: {
-    home() {
-      this.$router.push("/");
+    hub() {
+      this.$router.push("/hub");
     },
     select(tab) {
       this.deselect();
@@ -69,8 +74,10 @@ export default {
     }
   },
   mounted() {
-    let id = this.$props.links[0].id;
-    this.select(id);
+    if (this.$props.links) {
+      let id = this.$props.links[0].id;
+      this.select(id);
+    }
   }
 };
 </script>

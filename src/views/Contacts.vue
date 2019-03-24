@@ -2,7 +2,7 @@
   <div class="wrapper">
 
     <page-layout
-      title="Проектиране, Консултации"
+      title="Контакти"
       v-if="!isMobile()"
       :links="links"
       @changeTab="tabHandler"

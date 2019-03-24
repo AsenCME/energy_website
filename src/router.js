@@ -21,5 +21,20 @@ export default new Router({
 			name: "contacts",
 			component: () => import(/* webpackChunkName: "contacts" */ "./views/Contacts.vue"),
 		},
+		{
+			path: "/printing",
+			name: "printing",
+			component: () => import(/* webpackChunkName: "contacts" */ "./views/Printing.vue"),
+		},
+		{
+			path: "/consulting",
+			name: "consulting",
+			component: () => import(/* webpackChunkName: "contacts" */ "./views/Consulting.vue"),
+		},
+		{
+			path: "/about",
+			name: "about",
+			component: () => import(/* webpackChunkName: "contacts" */ "./views/About.vue"),
+		},
 	],
 });
