@@ -1,15 +1,16 @@
 <template>
-  <div class="about">
+  <div class="hub-page">
 
+    <!-- Desktop Menu -->
     <div
       class="menu"
-      :class="{'desktop': !this.isMobile()}"
+      v-if="!this.isMobile()"
     >
 
       <div class="spacer"></div>
 
       <div
-        class="segment tl shadow"
+        class="segment tl"
         @click="go('consulting')"
       >
         <div class="title">Проектиране и консултации</div>
@@ -19,7 +20,7 @@
         ></div>
       </div>
       <div
-        class="segment tr shadow"
+        class="segment tr"
         @click="go('printing')"
       >
         <div class="title">Копирни услуги</div>
@@ -29,7 +30,7 @@
         ></div>
       </div>
       <div
-        class="segment br shadow"
+        class="segment br"
         @click="go('contacts')"
       >
         <div class="title bottom">Контакти</div>
@@ -39,7 +40,7 @@
         ></div>
       </div>
       <div
-        class="segment bl shadow"
+        class="segment bl"
         @click="go('about')"
       >
         <div class="title bottom">За нас</div>
@@ -54,6 +55,38 @@
         alt=""
         class="bulb"
       >
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+      v-else
+      class="menu-mobile"
+    >
+
+      <div class="segment">
+        <div class="title">Проектиране и консултации</div>
+      </div>
+      <div class="segment">
+        <div class="title">Копирни услуги</div>
+      </div>
+
+      <div class="middle">
+        <div class="bulb-wrapper">
+          <img
+            src="./../assets/bulb.svg"
+            alt="light-bulb"
+            class="bulb"
+          ></div>
+        <div class="line"></div>
+      </div>
+
+      <div class="segment">
+        <div class="title">За Нас</div>
+      </div>
+      <div class="segment">
+        <div class="title">Контакти</div>
+      </div>
 
     </div>
 
@@ -86,7 +119,7 @@ export default {
   },
   methods: {
     go(place) {
-      this.$router.push(`/${place}`);
+      if (!this.isMobile()) this.$router.push(`/${place}`);
     }
   }
 };

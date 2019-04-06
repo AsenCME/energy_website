@@ -309,7 +309,9 @@
 		}
 		.label {
 			position: absolute;
-			bottom: 0px;
+			bottom: 0%;
+			border: 3px solid white;
+			border-radius: 5px;
 			transform: translateY(0.4em);
 			font-size: 1.2em;
 			font-weight: 700;

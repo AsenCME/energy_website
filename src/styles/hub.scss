@@ -1,11 +1,14 @@
 @import "./main.scss";
 $radius: 100px;
 
-.about {
+.hub-page {
 	height: 100%;
 	position: fixed;
 	width: 100%;
 	background: $main-color;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .bg {
@@ -15,27 +18,16 @@ $radius: 100px;
 	z-index: -1;
 }
 
+// *---* XXX: Desktop Menu Styles XXX: *---* //
 .menu {
-	width: 80vw;
-	height: 80vw;
+	width: 50vh;
+	height: 50vh;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
-	&.desktop {
-		width: 50vh;
-		height: 50vh;
-
-		.spacer {
-			width: 60%;
-			height: 60%;
-		}
-	}
-
+	// Single Segment
 	.segment {
 		background: $white;
 		width: calc(50% - 20px);
@@ -46,6 +38,7 @@ $radius: 100px;
 		transition: 0.3s $easer;
 		overflow: hidden;
 
+		// Title for each segment
 		.title {
 			font-weight: 700;
 			text-transform: uppercase;
@@ -66,6 +59,7 @@ $radius: 100px;
 			}
 		}
 
+		// Underlay with Picture
 		.underlay {
 			position: absolute;
 			top: -10px;
@@ -82,6 +76,8 @@ $radius: 100px;
 			transition: 0.3s $easer;
 		}
 
+		// *---* XXX: The four individual segments XXX: *---* //
+		// Top Left segment
 		&.tl {
 			top: 0px;
 			left: 0px;
@@ -103,6 +99,8 @@ $radius: 100px;
 				}
 			}
 		}
+
+		// Top Right segment
 		&.tr {
 			top: 0px;
 			right: 0px;
@@ -123,6 +121,8 @@ $radius: 100px;
 				}
 			}
 		}
+
+		// Bottom Right segment
 		&.br {
 			bottom: 0px;
 			right: 0px;
@@ -143,6 +143,8 @@ $radius: 100px;
 				}
 			}
 		}
+
+		// Bottom Left segment
 		&.bl {
 			bottom: 0px;
 			left: 0px;
@@ -165,6 +167,7 @@ $radius: 100px;
 		}
 	}
 
+	// Spacer - seperates the segments
 	.spacer {
 		z-index: 1;
 		position: absolute;
@@ -174,8 +177,92 @@ $radius: 100px;
 		height: 60%;
 	}
 
+	// Bulb image in the middle
 	.bulb {
 		z-index: 2;
 		width: 25%;
+	}
+}
+
+// XXX: *---* Time for the mobile menu styles brooooo XXX: *---* //
+.menu-mobile {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 3px solid white;
+	padding: 20px 0px;
+
+	.segment {
+		width: 100%;
+
+		// Second element - before bulb
+		// &:nth-of-type(2) {
+		// 	.title {
+		// 		border: none;
+		// 	}
+		// }
+
+		// Fourth element - after bulb
+		&:nth-of-type(4) {
+			.title {
+				border-top: 3px solid white;
+				padding-top: 20px;
+				margin-top: 20px;
+			}
+		}
+
+		// Last element
+		&:last-of-type {
+			.title {
+				border: none;
+				margin-bottom: 0px;
+				padding-bottom: 0px;
+			}
+		}
+
+		// Title for each segment
+		.title {
+			color: white;
+			font-size: 24px;
+			text-align: center;
+			font-weight: 700;
+			padding: 0px 20px;
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			border-bottom: 3px solid white;
+		}
+	}
+
+	// Middle part - where the bulb is
+	.middle {
+		overflow: hidden;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 20px 0px;
+		position: relative;
+
+		// Wrapper for the image + image
+		.bulb-wrapper {
+			z-index: 2;
+			width: 40%;
+			background-color: $main-color;
+			padding: 0px 20px;
+
+			.bulb {
+				width: 100%;
+			}
+		}
+
+		// Line through bulb
+		.line {
+			position: absolute;
+			height: 3px;
+			width: 100%;
+			background-color: white;
+		}
 	}
 }
